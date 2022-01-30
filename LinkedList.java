@@ -15,8 +15,7 @@ public class LinkedList {
     public void addHeadNode(Node p) {
         Node q;
         if (isEmpty()) {
-            first = p;
-            last = p;
+            first =last= p;
         } else {
             q = last;
             q.setNext(p);

@@ -24,7 +24,7 @@ public class Bin {
         System.out.println(" ERROR! ");
     }
 
-    public Node getRear(Node head) {//because we should add chunk from last of the list
+    public Node getRear(Node head) {//because we should add chunk in the last of the list
         Node p = head;
         while (p.getNextBin() != null) {
             p = p.getNextBin();
@@ -51,7 +51,7 @@ public class Bin {
         }
     }
 
-    public boolean find(int x) {//for malloc method
+    public boolean find(int x) {//for malloc method,it uses in delete method
         Node p = lists.getFirst();
         while (p != null) {
             if (p.getInfo() == x) {
